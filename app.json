@@ -1,0 +1,7 @@
+{
+  "name": "Discord-Selfbot",
+  "description": "A simple python application to set your streaming activity on discord.",
+  "repository": "https://github.com/UnlimitedBytes/discord-stream-selfbot",
+  "logo": "https://image.noelshack.com/fichiers/2019/19/7/1557669452-600.png",
+  "keywords": ["discord", "selfbot", "discord bot", "discord selfbot", "stream discord", "discord streaming selfbot"]
+}
