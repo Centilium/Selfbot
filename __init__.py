@@ -33,10 +33,8 @@ async def on_message(message):
 					
 					if cmd == "ytb":
 						if len(args) == 0:
-							await var ytb_embed = new Discord.RichEmbed()
-                                                              .setColor('#b2071d')
-                                                              .addField("Notre chaîne Youtube :", "https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
-                                                              message.channel.sendEmbed(ytb_embed)
+							await channel.send(""https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
+                                                              
 						else:
 							await channel.send("Usage: .ping")
 						else:
