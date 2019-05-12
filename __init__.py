@@ -35,7 +35,7 @@ async def on_message(message):
 						if len(args) == 0:
 							await channel.send("Salut")
 						else:
-							await channel.send("Usage: .salut"")
+							await channel.send("Usage: .salut")
 					
 					
 					if cmd == "streamname":
