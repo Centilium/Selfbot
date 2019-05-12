@@ -31,6 +31,16 @@ async def on_message(message):
 						else:
 							await channel.send("Usage: .ping")
 					
+					if cmd == "youtube":
+						if len(args) == 0:
+							await var help_embed = new Discord.RichEmbed()
+                                                              .setColor('#b2071d')
+                                                              .addField("Notre chaîne Youtube :", "https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
+                                                              message.channel.sendEmbed(help_embed)
+						else:
+							await channel.send("Usage: .ping")
+					
+					
 					if cmd == "streamname":
 						if len(args) >= 1:
 							STREAM['name'] = ' '.join(args)
