@@ -33,10 +33,9 @@ async def on_message(message):
 					
 					if cmd == "ytb":
 						if len(args) == 0:
-							await message.author.sendMessage(""https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
+							message.delete();
+							await channel.send("Notre chaîne Youtube : https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
                                                               
-						else:
-							await channel.send("Usage: .ping")
 						else:
 							await channel.send("Usage: .ytb")
 					
