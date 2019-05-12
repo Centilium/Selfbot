@@ -33,7 +33,7 @@ async def on_message(message):
 					
 					if cmd == "youtube":
 						if len(args) == 0:
-							await channel.send("https://www.youtube.com/channel/UC5wU_UhiH_ue07MDXUDfUdQ")
+							await channel.send("https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
 						else:
 							await channel.send("Usage: .ping")
 					
