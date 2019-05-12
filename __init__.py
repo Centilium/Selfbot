@@ -27,12 +27,12 @@ async def on_message(message):
 
 					if cmd == "ping":
 						if len(args) == 0:
-							await channel.send("Pong!")
+							await channel.send("Pong! ceci est un test")
 						else:
 							await channel.send("Usage: .ping")
 					
 					if cmd == "ytb":
-						if len(args) == 0:
+						if len(args) == 1:
 							await channel.send("Salut")
 						else:
 							await channel.send("Usage: .salut")
