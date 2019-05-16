@@ -39,7 +39,22 @@ async def on_message(message):
 						else:
 							await channel.send("Usage: .ytb")
 					
-					
+					if cmd == "twitch": 
+						if len(args) == 0:
+							message.delete();
+							await channel.send("Notre chaîne Twitch : https://www.twitch.tv/teamcentilium")
+						
+						else:
+							await channel.send("Usage: .twitch")
+							
+					if cmd == "ùe": 
+						if len(args) == 0:
+							message.delete();
+							await channel.send("Ce selfbot créer par Nigary est disponible gratuitement par [ici](https://github.com/Centilium/Selfbot)")
+						
+						else:
+							await channel.send("Usage: .me")
+						
 					if cmd == "streamname":
 						if len(args) >= 1:
 							STREAM['name'] = ' '.join(args)
