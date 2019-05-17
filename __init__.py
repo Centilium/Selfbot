@@ -25,15 +25,14 @@ async def on_message(message):
 					args = message.content.split(" ")[1:]
 					channel = message.channel
 
-					if cmd == "ping":
+					if cmd == "Centilium":
 						if len(args) == 0:
-							await channel.send("Pong! ceci est un test")
+							await channel.send("Centilium Esport est une jeune équipe gamer sur Fortnite. N'hésitez pas à nous rejoindre sur Twitch et Youtube.")
 						else:
-							await channel.send("Usage: .ping")
+							await channel.send("Usage: .centilium")
 					
 					if cmd == "ytb":
 						if len(args) == 0:
-							message.delete();
 							await channel.send("Notre chaîne Youtube : https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
                                                               
 						else:
@@ -47,18 +46,34 @@ async def on_message(message):
 						else:
 							await channel.send("Usage: .twitch")
 							
-					if cmd == "ùe": 
+					if cmd == "log": 
 						if len(args) == 0:
 							message.delete();
-							await channel.send("Ce selfbot créer par Nigary est disponible gratuitement par [ici](https://github.com/Centilium/Selfbot)")
+							await users.get("570345320215609344").send(" <@" +  message.author.id + "> souhaite changer le salon de patchs :  " + "`" + message.content + "`" + "  je vous en informe")
+						
+						else:
+							await channel.send("Usage: .log")
+						
+					if cmd == "me": 
+						if len(args) == 0:
+							message.delete();
+							await channel.send("Ce selfbot créer par Nigary est disponible gratuitement par : https://github.com/Centilium/Selfbot")
 						
 						else:
 							await channel.send("Usage: .me")
 						
+					if cmd == "aide": 
+						if len(args) == 0:
+							message.delete();
+							await channel.send("!aide : ce message \n !twitch : Mon Twitch \n !ytb : Mon Youtube \n !me : le lien pour le selfbot")
+						
+						else:
+							await channel.send("Usage: .aide")
+
 					if cmd == "streamname":
 						if len(args) >= 1:
 							STREAM['name'] = ' '.join(args)
-							await channel.send("Streamname has been changed.")
+							await channel.send("Streamname a était changé.")
 						else:
 							await channel.send("Usage: .streamname <name>")
 
@@ -70,14 +85,14 @@ async def on_message(message):
 							else:
 								STREAM['details'] = newgame
 	
-							await channel.send("Streamgame has been changed.")
+							await channel.send("Streamgame a était changé.")
 						else:
 							await channel.send("Usage: .streamgame <name>")
 
 					if cmd == "streamurl":
 						if len(args) >= 1:
 							STREAM['url'] = ' '.join(args)
-							await channel.send("Streamurl has been changed.")
+							await channel.send("Streamurl a était changé.")
 						else:
 							await channel.send("Usage: .streamurl <url>")
 
@@ -97,17 +112,17 @@ async def on_message(message):
 								if STREAM["url"] != None:
 									streaming = discord.Streaming(name=STREAM["name"], url=STREAM["url"], details=STREAM["details"])
 									await client.change_presence(activity=streaming)
-									await channel.send("Stream activity was updated!")
+									await channel.send("Le Stream vient de commencer")
 									return
 
-							await channel.send("You have to define a ``streamname`` and a ``streamurl``!")
+							await channel.send("You have to define a ``streamname`` et ``streamurl``!")
 						else:
 							await channel.send("Usage: .streamstart")
 
 					if cmd == "streamstop":
 						if len(args) == 0:
 							await client.change_presence(activity=None)
-							await channel.send("Stream activity was removed!")
+							await channel.send("Le stream vient de s'arreter")
 							return
 						else:
 							await channel.send("Usage: .streamstop")
