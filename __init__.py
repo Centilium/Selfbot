@@ -28,44 +28,25 @@ async def on_message(message):
 					if cmd == "Centilium":
 						if len(args) == 0:
 							await channel.send("Centilium Esport est une jeune équipe gamer sur Fortnite. N'hésitez pas à nous rejoindre sur Twitch et Youtube.")
-						else:
-							await channel.send("Usage: .centilium")
 					
 					if cmd == "ytb":
 						if len(args) == 0:
 							await channel.send("Notre chaîne Youtube : https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
-                                                              
-						else:
-							await channel.send("Usage: .ytb")
 					
 					if cmd == "twitch": 
 						if len(args) == 0:
 							message.delete();
 							await channel.send("Notre chaîne Twitch : https://www.twitch.tv/teamcentilium")
 						
-						else:
-							await channel.send("Usage: .twitch")
-							
-					if cmd == "log": 
-						if len(args) == 0:
-							message.delete();
-							await users.get("570345320215609344").send(" <@" +  message.author.id + "> souhaite changer le salon de patchs :  " + "`" + message.content + "`" + "  je vous en informe")
-						
-						else:
-							await channel.send("Usage: .log")
-						
 					if cmd == "me": 
 						if len(args) == 0:
 							message.delete();
 							await channel.send("Ce selfbot créer par Nigary est disponible gratuitement par : https://github.com/Centilium/Selfbot")
 						
-						else:
-							await channel.send("Usage: .me")
-						
 					if cmd == "aide": 
 						if len(args) == 0:
 							message.delete();
-							await channel.send("!aide : ce message \n !twitch : Mon Twitch \n !ytb : Mon Youtube \n !me : le lien pour le selfbot")
+							await channel.send("!aide : ce message \n!twitch : Mon Twitch \n!ytb : Mon Youtube \n!me : le lien pour le selfbot \n!Centilium : Tout sur Mon équipe Esport")
 						
 						else:
 							await channel.send("Usage: .aide")
