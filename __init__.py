@@ -50,41 +50,6 @@ async def on_message(message):
 
 					channel = message.channel
 
-
-
-					if cmd == "Centilium":
-
-						if len(args) == 0:
-
-							await channel.send("**Centilium Esport est une jeune équipe gamer sur Fortnite. N'hésitez pas à nous rejoindre sur Twitch et Youtube.**")
-
-					
-
-					if cmd == "ytb":
-
-						if len(args) == 0:
-
-							await channel.send("Notre chaîne Youtube : https://www.youtube.com/channel/UCatpNP30Oo0F9fxtLMKMj3w")
-
-					
-
-					if cmd == "twitch": 
-
-						if len(args) == 0:
-
-							message.delete()
-
-							await channel.send("Notre chaîne Twitch : https://www.twitch.tv/teamcentilium")
-
-					if cmd == "test":
-
-						if len(args) == 0:
-							message.delete()
-							embed = discord.Embed(title="Tile", description="Desc", color=0x00ff00)
-							embed.add_field(name="Field1", value="hi", inline=False)
-							embed.add_field(name="Field2", value="hi2", inline=False)
-							await client.send_message(message.channel, embed=embed)
-
 					if cmd == "me": 
 
 						if len(args) == 0:
