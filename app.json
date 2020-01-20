@@ -1,8 +1,7 @@
 {
   "name": "Discord-Selfbot-FR",
-  "description": "A simple python application to set your streaming activity on Discord and laughting",
-  "repository": "https://github.com/Centilium/selbot",
+  "description": "A simple python application to set your streaming activity on Discord",
+  "repository": "https://github.com/Nigary/selbot",
   "logo": "https://image.noelshack.com/fichiers/2019/26/6/1561761184-079dcadf-90fa-4bac-89ab-9e84f09afc7f.jpeg",
   "keywords": ["discord", "selfbot", "discord bot", "discord selfbot", "stream discord", "discord streaming selfbot"]
 }
-Tu 
